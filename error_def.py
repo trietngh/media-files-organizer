@@ -1,0 +1,2 @@
+class UnknownCaptureDateError(Exception):
+    pass
