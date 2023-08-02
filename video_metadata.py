@@ -2,7 +2,7 @@ from hachoir.metadata import extractMetadata
 from hachoir.parser import createParser
 from error_def import UnknownCaptureDateError
 
-def get_date_captured_vid(file_path):
+def get_date_captured_vid(file_path) -> str:
     parser = createParser(file_path)
     if not parser:
         raise FileNotFoundError
@@ -22,7 +22,7 @@ def get_date_captured_vid(file_path):
 
     raise UnknownCaptureDateError
 
-def get_metadata_hachoir(file_path):
+def get_metadata_hachoir(file_path) -> None:
     parser = createParser(file_path)
     if not parser:
         raise FileNotFoundError

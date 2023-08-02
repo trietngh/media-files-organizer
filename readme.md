@@ -9,8 +9,10 @@ All contributions to this project is welcome.
 
 ## CAUTION
 
-For safety, please make sure to **_backup your important files_** before put it in the program. 
+1. For safety, please make sure to **_backup your important files_** before put it in the program. 
 This program is tested by me, but I will not be responsible for any file lost or corrupted due to undiscovered bugs.
+
+2. **_Uncorrected naming may occured_** because the capture/creation date in file's metadata may refer to the date it is been create in the current working directory.
 
 ## SUPPORTED FILE TYPES
 ### Image
