@@ -2,9 +2,11 @@
 ## DESCRIPTION
 **Media-Files-Organizer** is a Python program to **organize a various media file types** by renaming files based on **capture date/creation date** found in file's metadata.
 
-Image metadata is extracting by using [PIL](https://github.com/python-pillow/Pillow) librairy.
-Video metadata is extracting by using [Hachoir](https://hachoir.readthedocs.io/en/latest/) librairy.
+Image metadata is extracting by using [PIL](https://github.com/python-pillow/Pillow) (10.0.0) librairy.
 
+Video metadata is extracting by using [Hachoir](https://hachoir.readthedocs.io/en/latest/) (3.2.0) librairy.
+
+See INSTALL GUIDE for required dependencies to run this code.
 All contributions to this project is welcome.
 
 ## CAUTION
@@ -24,7 +26,28 @@ This program is tested by me, but I will not be responsible for any file lost or
 - MOV
 
 ## INSTALL GUIDE
-In development...
+1. Install the latest version of **Python** [here](https://www.python.org/downloads/), 
+normally, it has _pip_ included
+2. Install **Pillow** librairy
+
+    ```
+    pip install Pillow
+    ```
+3. Install **Hachoir** librairy
+    ```
+    pip install hachoir
+    ```
 
 ## USER GUIDE
-In development...
+From the command line : 
+```
+mediaorganizer.py [-d | -h | -f | -m]
+```  
+
+| Options       | Description                     |
+|:-------------:|---------------------------------|
+| None          | Equivalent to -d    
+| -d            | Renaming all supported files in a directory and move them to a new directory 
+| -f            | Renaming a specifique file and move it to a new directory
+| -m            | Display the metadata of a specifique file 
+| -h            | Display help        
