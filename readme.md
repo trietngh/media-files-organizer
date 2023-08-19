@@ -39,9 +39,10 @@ normally, it has _pip_ included
     ```
 
 ## USER GUIDE
-From the command line : 
+From the command line, make sure you are in the directory containing the source code, 
+if not, change the path of the source code accordingly :
 ```
-mediaorganizer.py [-d | -h | -f | -m]
+python mediaorganizer.py [-d | -h | -f | -m]
 ```  
 
 | Options       | Description                     |
