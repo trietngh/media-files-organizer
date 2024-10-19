@@ -60,3 +60,7 @@ def rename_and_move_to_sorted(dest_dirs, file_path) -> None:
         #print('Error opening this file %s'% file_path)
         failed_count += 1
         pass
+    except OSError:
+        #print('File name is incorrect')
+        failed_count += 1
+        pass
